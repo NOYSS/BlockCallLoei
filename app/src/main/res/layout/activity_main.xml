@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickBlock"
+            android:text="Block" />
+
+        <Button
+            android:id="@+id/btnUnBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickUnBlock"
+            android:text="UnBlock" />
+
+        <Button
+            android:id="@+id/btnIsBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickIsBlocked"
+            android:text="IsBlocked" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/history_call"
+        android:textAlignment="center"
+        android:textSize="16sp" />/>
+
+    <ListView
+        android:id="@+id/his_call_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>
